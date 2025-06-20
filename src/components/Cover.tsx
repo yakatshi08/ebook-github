@@ -29,14 +29,14 @@ const Cover: React.FC<CoverProps> = ({ onStart }) => {
 
       {/* Main content */}
       <div className="z-10 max-w-3xl">
-        {/* Main title */}
-        <h1 className="text-5xl md:text-7xl font-bold text-[#FFD43B] mb-6 tracking-tight leading-tight">
+        {/* Main title - ZONE 1 - Taille réduite */}
+        <h1 className="text-3xl md:text-5xl font-bold text-[#FFD43B] mb-6 tracking-tight leading-tight">
           MAÎTRISEZ L'IA
           <br />
           DÈS AUJOURD'HUI
         </h1>
 
-        {/* Subtitle - MODIFICATION 1 */}
+        {/* Subtitle */}
         <p className="text-xl md:text-2xl text-white mb-8 font-light tracking-wide leading-relaxed">
           Le guide ultime pour démarrer avec l'IA, sans être expert
         </p>
@@ -50,21 +50,21 @@ const Cover: React.FC<CoverProps> = ({ onStart }) => {
           </p>
         </div>
 
-        {/* CTA Button - MODIFICATION 2 */}
+        {/* CTA Button - ZONE 2 - Taille réduite */}
         <button
           onClick={onStart}
-          className="bg-[#FFD43B] text-[#0C1C44] px-8 py-4 rounded-full font-semibold text-lg 
+          className="bg-[#FFD43B] text-[#0C1C44] px-5 py-2 rounded-full font-semibold text-base 
                    hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 
-                   shadow-lg hover:shadow-xl flex items-center gap-3 mx-auto"
+                   shadow-lg hover:shadow-xl flex items-center gap-2 mx-auto"
         >
-          <Play size={20} />
+          <Play size={16} />
           Je me lance !
         </button>
 
-        {/* Author signature - AMÉLIORATIONS VISUELLES */}
-        <div className="mt-12 pt-6 border-t border-white/20 relative z-20">
+        {/* Author signature - ZONE 3 - Repositionné */}
+        <div className="mt-10 pt-4 border-t border-white/20 relative z-20">
           <div 
-            className="rounded-lg px-8 py-6 inline-block"
+            className="rounded-lg px-6 py-4 inline-block"
             style={{
               background: 'linear-gradient(to top, #F6D76F, #1B2B55)'
             }}
