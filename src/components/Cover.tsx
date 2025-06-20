@@ -61,17 +61,17 @@ const Cover: React.FC<CoverProps> = ({ onStart }) => {
           Je me lance !
         </button>
 
-        {/* Author signature - CORRECTIONS APPLIQUÉES */}
-        <div className="mt-8 pt-8 border-t border-white/20 relative z-20">
+        {/* Author signature - AMÉLIORATIONS VISUELLES */}
+        <div className="mt-12 pt-6 border-t border-white/20 relative z-20">
           <div 
-            className="rounded-lg px-6 py-4 inline-block"
+            className="rounded-lg px-8 py-6 inline-block"
             style={{
-              background: 'linear-gradient(to top, #FFD43B 0%, rgba(255, 212, 59, 0.8) 20%, rgba(255, 212, 59, 0.4) 50%, rgba(255, 212, 59, 0.1) 80%, transparent 100%)'
+              background: 'linear-gradient(to top, #F6D76F, #1B2B55)'
             }}
           >
-            <p className="text-[#0C1C44] text-sm font-medium leading-relaxed">
-              Par <span className="font-bold text-[#0C1C44]">Beros</span><br />
-              <span className="text-[#1A2A5B] font-medium">Expert en Réseau et Sécurité, Automatisation et Intelligence Artificielle</span>
+            <p className="text-white text-sm font-medium leading-relaxed">
+              Par <span className="font-bold text-white">Beros</span><br />
+              <span className="text-white/90 font-medium">Expert en Réseau et Sécurité, Automatisation et Intelligence Artificielle</span>
             </p>
           </div>
         </div>
