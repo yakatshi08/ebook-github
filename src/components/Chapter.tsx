@@ -79,8 +79,12 @@ const Chapter: React.FC<ChapterProps> = ({ chapter }) => {
   };
 
   return (
-    <div className="min-h-screen bg-white py-12 px-8">
-      <div className="max-w-3xl mx-auto">
+    <div className="min-h-screen bg-white py-12 px-8 relative">
+      {/* Lignes verticales bleu foncé - Améliorées */}
+      <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-[#1B2B55] hidden md:block"></div>
+      <div className="absolute right-6 top-0 bottom-0 w-0.5 bg-[#1B2B55] hidden md:block"></div>
+      
+      <div className="max-w-3xl mx-auto px-6">
         {/* Chapter header */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-6">

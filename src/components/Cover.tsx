@@ -29,8 +29,8 @@ const Cover: React.FC<CoverProps> = ({ onStart }) => {
 
       {/* Main content */}
       <div className="z-10 max-w-3xl">
-        {/* Main title */}
-        <h1 className="text-5xl md:text-7xl font-bold text-[#FFD43B] mb-6 tracking-tight leading-tight">
+        {/* Main title - ZONE 1 - Taille réduite */}
+        <h1 className="text-3xl md:text-5xl font-bold text-[#FFD43B] mb-6 tracking-tight leading-tight">
           MAÎTRISEZ L'IA
           <br />
           DÈS AUJOURD'HUI
@@ -38,7 +38,7 @@ const Cover: React.FC<CoverProps> = ({ onStart }) => {
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-white mb-8 font-light tracking-wide leading-relaxed">
-          Manuel essentiel pour novices et créateurs d'entreprise
+          Le guide ultime pour démarrer avec l'IA, sans être expert
         </p>
 
         {/* Description */}
@@ -50,23 +50,28 @@ const Cover: React.FC<CoverProps> = ({ onStart }) => {
           </p>
         </div>
 
-        {/* CTA Button */}
+        {/* CTA Button - ZONE 2 - Taille réduite */}
         <button
           onClick={onStart}
-          className="bg-[#FFD43B] text-[#0C1C44] px-8 py-4 rounded-full font-semibold text-lg 
+          className="bg-[#FFD43B] text-[#0C1C44] px-5 py-2 rounded-full font-semibold text-base 
                    hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 
-                   shadow-lg hover:shadow-xl flex items-center gap-3 mx-auto"
+                   shadow-lg hover:shadow-xl flex items-center gap-2 mx-auto"
         >
-          <Play size={20} />
-          Commencer la lecture
+          <Play size={16} />
+          Je me lance !
         </button>
 
-        {/* Author signature */}
-        <div className="mt-16 pt-8 border-t border-white/20 relative z-20">
-          <div className="bg-white/95 backdrop-blur-sm rounded-lg px-6 py-4 inline-block">
-            <p className="text-[#0C1C44] text-sm font-medium leading-relaxed">
-              Par <span className="font-bold text-[#0C1C44]">Bertos</span><br />
-              <span className="text-[#1A2A5B] font-medium">Expert en Réseau et Sécurité, Automatisation et Intelligence Artificielle</span>
+        {/* Author signature - ZONE 3 - Repositionné */}
+        <div className="mt-10 pt-4 border-t border-white/20 relative z-20">
+          <div 
+            className="rounded-lg px-6 py-4 inline-block"
+            style={{
+              background: 'linear-gradient(to top, #F6D76F, #1B2B55)'
+            }}
+          >
+            <p className="text-white text-sm font-medium leading-relaxed">
+              Par <span className="font-bold text-white">Beros</span><br />
+              <span className="text-white/90 font-medium">Expert en Réseau et Sécurité, Automatisation et Intelligence Artificielle</span>
             </p>
           </div>
         </div>
