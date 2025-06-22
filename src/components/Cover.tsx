@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Zap, CircuitBoard, Play } from 'lucide-react';
+import { Brain, Zap, CircuitBoard, Play, Mail } from 'lucide-react';
 
 interface CoverProps {
   onStart: () => void;
@@ -73,6 +73,14 @@ const Cover: React.FC<CoverProps> = ({ onStart }) => {
               Par <span className="font-bold text-white">Beros</span><br />
               <span className="text-white/90 font-medium">Expert en Réseau et Sécurité, Automatisation et Intelligence Artificielle</span>
             </p>
+            
+            {/* Contact email with envelope icon */}
+            <div className="flex items-center justify-center gap-2 mt-3 pt-3 border-t border-white/20">
+              <Mail size={16} className="text-[#FFD43B]" />
+              <span className="text-white/90 text-sm font-medium">
+                Contact: berosform@gmail.com
+              </span>
+            </div>
           </div>
         </div>
       </div>
