@@ -40,9 +40,9 @@ const ProfessionalSignature: React.FC<ProfessionalSignatureProps> = ({ className
           Par Beros
         </h1>
 
-        {/* Subtitle */}
+        {/* Subtitle - Espacement réduit */}
         <p 
-          className="text-lg md:text-xl font-medium mb-6 leading-tight max-w-2xl"
+          className="text-lg md:text-xl font-medium mb-3 leading-tight max-w-2xl"
           style={{
             fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
             color: '#E8F4FD',
@@ -52,15 +52,15 @@ const ProfessionalSignature: React.FC<ProfessionalSignatureProps> = ({ className
           Expert en Réseau & Sécurité, Automatisation et Intelligence Artificielle
         </p>
 
-        {/* Separator line */}
+        {/* Separator line - Espacement réduit */}
         <div 
-          className="w-32 h-px mb-6"
+          className="w-32 h-px mb-3"
           style={{
             background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.6) 50%, transparent 100%)'
           }}
         />
 
-        {/* Contact information */}
+        {/* Contact information - Espacement réduit */}
         <div className="flex items-center justify-center gap-3">
           <div 
             className="p-2 rounded-full"
