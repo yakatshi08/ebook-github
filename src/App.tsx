@@ -3,10 +3,12 @@ import Cover from './components/Cover';
 import TableOfContents from './components/TableOfContents';
 import Chapter from './components/Chapter';
 import Navigation from './components/Navigation';
+import SignatureDemo from './components/SignatureDemo';
 import { ebookData } from './data/ebookData';
 
 function App() {
   const [currentPage, setCurrentPage] = useState(0);
+  const [showSignatureDemo, setShowSignatureDemo] = useState(false);
   const totalPages = ebookData.chapters.length + 2; // +2 for cover and TOC
 
   const handleNextPage = () => {
@@ -26,6 +28,10 @@ function App() {
   };
 
   const renderCurrentPage = () => {
+    if (showSignatureDemo) {
+      return <SignatureDemo />;
+    }
+    
     if (currentPage === 0) {
       return <Cover onStart={() => setCurrentPage(1)} />;
     } else if (currentPage === 1) {
@@ -38,9 +44,19 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Demo toggle button */}
+      <div className="fixed top-4 right-4 z-50">
+        <button
+          onClick={() => setShowSignatureDemo(!showSignatureDemo)}
+          className="bg-[#0C1C44] text-white px-4 py-2 rounded-lg shadow-lg hover:bg-[#1A2A5B] transition-colors"
+        >
+          {showSignatureDemo ? 'Retour eBook' : 'Voir Signature'}
+        </button>
+      </div>
+
       <div className="max-w-4xl mx-auto">
         {renderCurrentPage()}
-        {currentPage > 0 && (
+        {currentPage > 0 && !showSignatureDemo && (
           <Navigation
             currentPage={currentPage}
             totalPages={totalPages}
