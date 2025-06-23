@@ -23,3 +23,20 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# PDF outputs - NE PAS VERSIONNER
+pdf-final/
+pdf-output/
+pdf-output-fixed/
+pdf-amazon-kdp/
+pdf-output-clean/
+pdf-captures/
+*.pdf
+
+# EPUB output
+epub-output/
+*.epub
+
+# Dossiers temporaires
+temp/
+*.tmp

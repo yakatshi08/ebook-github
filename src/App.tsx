@@ -44,8 +44,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Demo toggle button */}
-      <div className="fixed top-4 right-4 z-50">
+      {/* SOLUTION RECOMMANDÉE: Bouton masqué pour l'impression PDF */}
+      <div className="fixed bottom-8 right-8 z-50 print:hidden">
         <button
           onClick={() => setShowSignatureDemo(!showSignatureDemo)}
           className="bg-[#0C1C44] text-white px-4 py-2 rounded-lg shadow-lg hover:bg-[#1A2A5B] transition-colors"
@@ -53,6 +53,26 @@ function App() {
           {showSignatureDemo ? 'Retour eBook' : 'Voir Signature'}
         </button>
       </div>
+
+      {/* OPTION ALTERNATIVE 1: Bouton plus petit, en bas à gauche */}
+      {/* <div className="fixed bottom-4 left-4 z-50">
+        <button
+          onClick={() => setShowSignatureDemo(!showSignatureDemo)}
+          className="bg-[#0C1C44] text-white text-sm px-3 py-1.5 rounded-md shadow-lg hover:bg-[#1A2A5B] transition-colors"
+        >
+          {showSignatureDemo ? 'Retour' : 'Signature'}
+        </button>
+      </div> */}
+
+      {/* OPTION ALTERNATIVE 2: Bouton dans l'espace vide (plus haut) */}
+      {/* <div className="fixed bottom-24 right-4 z-50">
+        <button
+          onClick={() => setShowSignatureDemo(!showSignatureDemo)}
+          className="bg-[#0C1C44] text-white text-sm px-3 py-1.5 rounded-md shadow-md hover:bg-[#1A2A5B] transition-colors opacity-90"
+        >
+          {showSignatureDemo ? '←' : '✍'}
+        </button>
+      </div> */}
 
       <div className="max-w-4xl mx-auto">
         {renderCurrentPage()}
